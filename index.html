@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отзыв</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form class="form" action="#">
+    <h1 class="form-title">Написать отзыв</h1>
+    <div class="rating">
+      <h2 class="rating-title">Рейтинг</h2>
+      <div class="rating-stars">
+        <label for="rating-1">
+          <img class="rating-star" src="./assets/star-checked.svg" alt="rating 1">
+        </label>
+        <input class="rating-input" name='rating' value='1' type="radio" id="rating-1">
+
+        <label for="rating-2">
+          <img class="rating-star" src="./assets/star-checked.svg" alt="rating 2">
+        </label>
+        <input class="rating-input" name='rating' value='2' type="radio" id="rating-2">
+
+        <label for="rating-3">
+          <img class="rating-star" src="./assets/star-checked.svg" alt="rating 3">
+        </label>
+        <input class="rating-input" name='rating' value='3' type="radio" id="rating-3">
+
+        <label for="rating-4">
+          <img class="rating-star" src="./assets/star-checked.svg" alt="rating 4">
+        </label>
+        <input class="rating-input" name='rating' value='4' type="radio" id="rating-4">
+
+        <label for="rating-5">
+          <img class="rating-star" src="./assets/star-unchecked.svg" alt="rating 5">
+        </label>
+        <input class="rating-input" name='rating' value='5' type="radio" id="rating-5">
+      </div>
+    </div>
+
+    <input class="form-input" name="name" placeholder='Имя' value="Мария">
+    <input class="form-input" name="city" placeholder='Город' value="Санкт-Петербург">
+    <input class="form-input" name="comment" placeholder='Краткий комментарий'
+      value="Нереально красивый цвет!">
+    <textarea class="form-feedback" name="feedback" placeholder="Отзыв"
+      rows="3">Повседневная практика показывает, что реализация намеченных плановых заданий в очень значительной степени обуславливает создание дальнейших направлений развития.</textarea>
+
+    <h2 class="photo-title">Загрузить фотографии</h2>
+    <div class="photo-input-wrapper">
+      <img class="photo-input-img" src="./assets/photo.svg" alt="photo">
+      <p class="photo-input-text">Нажмите на <a class="photo-input-link" href="#">ссылку</a>,
+        чтобы выбрать фотографии или просто перетащите их сюда</p>
+    </div>
+    <ul class="photo-list">
+      <li class="photo-list-item">
+        <img class="photo-list-img" src="./assets/01.jpg" alt="photo">
+        <img class="photo-list-img" src="./assets/02.jpg" alt="photo">
+      </li>
+    </ul>
+
+    <button class="form-button">Опубликовать отзыв</button>
+  </form>
+</body>
+
+</html>
