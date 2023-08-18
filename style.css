@@ -1,3 +1,7 @@
+.page {
+  margin: 0;
+}
+
 .form {
   font-family: 'Montserrat', Helvetica, sans-serif;
   letter-spacing: -0.5px;
@@ -38,6 +42,8 @@
 
 .rating-stars {
   display: inline-block;
+
+  font: 0/0 a;
 }
 
 .rating-input {
@@ -47,7 +53,6 @@
 .rating-star {
   width: 26px;
   height: 26px;
-  margin-right: -4px;
 
   cursor: pointer;
 }
@@ -62,6 +67,7 @@
 
   width: 100%;
   padding: 8px 0;
+  box-sizing: border-box;
 
   background-color: transparent;
   border: none;
@@ -90,7 +96,10 @@
 }
 
 .photo-input-wrapper {
-  padding: 30px 38px;
+  display: flex;
+  align-items: center;
+
+  padding: 26px 38px;
   margin-top: 12px;
 
   border: 1px solid #dadada;
@@ -102,16 +111,11 @@
 }
 
 .photo-input-text {
-  display: inline-block;
-
-  font-size: 13px;
-  color: #8c8d8d;
+  font-size: 12px;
   line-height: 1.5;
-  letter-spacing: -0.3px;
+  color: #8c8d8d;
 
-  width: 410px;
   margin: 0;
-  box-sizing: border-box;
 }
 
 .photo-input-link {
@@ -121,18 +125,25 @@
 .photo-list {
   list-style-type: none;
 
+  font: 0/0 a;
+
   padding: 0;
   margin: 0;
 }
 
-.photo-list-img {
-  width: 117px;
-  height: 117px;
-  margin-top: 20px;
-  margin-right: 20px;
+.photo-list-item {
+  display: inline-block;
+
+  margin-top: 22px;
+  margin-right: 22px;
 }
 
-.photo-list-img:nth-child(4n) {
+.photo-list-img {
+  width: 118px;
+  height: 118px;
+}
+
+.photo-list-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -142,11 +153,11 @@
   font-size: 14px;
   line-height: 1;
   letter-spacing: 1px;
-  color: #f6f6f6;
   text-transform: uppercase;
+  color: #f6f6f6;
 
   width: 100%;
-  padding: 19px;
+  padding: 20px;
   margin-top: 40px;
   box-sizing: border-box;
 
